@@ -61,16 +61,20 @@ class _HomeScreenState extends State<HomeScreen> {
       drawer: Drawer(),
       body: Stack(
         children: [
-          header(),
           BackgorundImage(),
           Column(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              header(),
               DailyPosts(),
               DailyPosts(),
-              CardButtons(),
             ],
           ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              CardButtons(),
+            ],
+          )
         ],
       ),
     );

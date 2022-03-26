@@ -59,7 +59,8 @@ Widget DailyPosts() {
                           width: 100,
                           child: ClipRRect(
                               borderRadius: BorderRadius.circular(8),
-                              child: Image.asset("assets/images/78876.1.png")),
+                              child:
+                                  Image.asset("assets/images/dailypost.png")),
                         ),
                       )
                     ],

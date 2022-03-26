@@ -11,7 +11,7 @@ Widget CardButtons() {
           alignment: Alignment.center,
           children: [
             Container(
-              height: 160,
+              height: 150,
               child: Image.asset("assets/images/78882.png"),
             ),
             const Text(
@@ -31,7 +31,7 @@ Widget CardButtons() {
           alignment: Alignment.center,
           children: [
             Container(
-              height: 160,
+              height: 150,
               child: Image.asset("assets/images/78882.2.png"),
             ),
             const Text(
