@@ -6,11 +6,14 @@ Widget header() {
   return Row(
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
-      Container(
-        width: 250,
-        child: Image.asset(
-          'assets/images/v933-audi-44-a.png',
-          color: headerColor,
+      Opacity(
+        opacity: 0.8,
+        child: Container(
+          width: 250,
+          child: Image.asset(
+            'assets/images/header2pt.png',
+            color: iconColor,
+          ),
         ),
       ),
     ],
