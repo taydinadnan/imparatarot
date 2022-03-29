@@ -10,7 +10,7 @@ Widget CardButtons() {
         child: Stack(
           alignment: Alignment.center,
           children: [
-            Container(
+            SizedBox(
               height: 150,
               child: Image.asset("assets/images/78882.png"),
             ),
@@ -30,7 +30,7 @@ Widget CardButtons() {
         child: Stack(
           alignment: Alignment.center,
           children: [
-            Container(
+            SizedBox(
               height: 150,
               child: Image.asset("assets/images/78882.2.png"),
             ),

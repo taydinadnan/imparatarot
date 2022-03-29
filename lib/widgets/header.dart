@@ -8,7 +8,7 @@ Widget header() {
     children: [
       Opacity(
         opacity: 0.8,
-        child: Container(
+        child: SizedBox(
           width: 250,
           child: Image.asset(
             'assets/images/header2pt.png',

@@ -15,7 +15,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int _selectedIndex = 0;
+  final int _selectedIndex = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -58,7 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       backgroundColor: bgColorPrimary,
       appBar: MyAppBar(),
-      drawer: Drawer(),
+      drawer: const Drawer(),
       body: Stack(
         children: [
           BackgorundImage(),
