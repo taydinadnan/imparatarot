@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:imparatarot/constants.dart';
+import 'package:imparatarot/public/constants.dart';
 import 'package:imparatarot/screens/home_screen.dart';
 
 import '../widgets/background_image.dart';

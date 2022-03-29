@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:imparatarot/constants.dart';
+import 'package:imparatarot/public/constants.dart';
 
 class MyAppBar extends StatefulWidget with PreferredSizeWidget {
   final PreferredSizeWidget? bottom;

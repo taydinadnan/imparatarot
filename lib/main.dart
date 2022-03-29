@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:imparatarot/splash/splash_screen.dart';
+import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+import 'routes/app_pages.dart';
+import 'theme/theme_service.dart';
+import 'theme/themes.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      home: SplashScreen(),
-    );
-  }
+void main() async {
+  await GetStorage.init();
+  runApp(GetMaterialApp(
+    debugShowCheckedModeBanner: false,
+    enableLog: true,
+    initialRoute: AppPages.INITIAL,
+    getPages: AppPages.routes,
+    theme: Themes().lightTheme,
+    darkTheme: Themes().darkTheme,
+    themeMode: ThemeService().getThemeMode(),
+  ));
 }

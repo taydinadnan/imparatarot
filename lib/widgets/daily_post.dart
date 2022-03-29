@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../constants.dart';
+import '../public/constants.dart';
 
 Widget DailyPosts() {
   return Column(

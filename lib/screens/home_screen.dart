@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:imparatarot/constants.dart';
+import 'package:imparatarot/public/constants.dart';
+import 'package:imparatarot/screens/random/random_cards_screen.dart';
 import 'package:imparatarot/widgets/appbar_main.dart';
 import 'package:imparatarot/widgets/card_buttons.dart';
 import 'package:imparatarot/widgets/daily_post.dart';
@@ -65,14 +66,23 @@ class _HomeScreenState extends State<HomeScreen> {
           Column(
             children: [
               header(),
+              const SizedBox(height: 50),
               DailyPosts(),
-              DailyPosts(),
+              // DailyPosts(),
             ],
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              CardButtons(),
+              GestureDetector(
+                child: CardButtons(),
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => RandomCardsScreen()));
+                },
+              ),
             ],
           )
         ],
