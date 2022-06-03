@@ -60,23 +60,34 @@ class _DetailsPageState extends State<DetailsPage> {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 1),
                     child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        boxShadow: [
-                          BoxShadow(
-                            color: postColor.withOpacity(0.2),
-                            offset: const Offset(200.0, 50.0),
-                          ),
-                        ],
-                      ),
                       child: Column(
                         children: [
-                          _buildTitle(
-                              'Overview'.trArgs(),
-                              widget.results[0]['name'],
-                              widget.results[0]['img']),
-                          const SizedBox(height: 5.0),
-                          _buildContent(widget.results[0]['meanings']['light']),
+                          Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: postColor.withOpacity(0.3),
+                                  offset: const Offset(-1.0, 40.0),
+                                ),
+                              ],
+                            ),
+                            child: Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 10),
+                              child: Column(
+                                children: [
+                                  _buildTitle(
+                                      'Overview'.trArgs(),
+                                      widget.results[0]['name'],
+                                      widget.results[0]['img']),
+                                  const SizedBox(height: 5.0),
+                                  _buildContent(
+                                      widget.results[0]['meanings']['light']),
+                                ],
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ),
@@ -85,23 +96,34 @@ class _DetailsPageState extends State<DetailsPage> {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 1),
                     child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        boxShadow: [
-                          BoxShadow(
-                            color: postColor.withOpacity(0.2),
-                            offset: const Offset(200.0, 50.0),
-                          ),
-                        ],
-                      ),
                       child: Column(
                         children: [
-                          _buildTitle(
-                              'Work'.trArgs(),
-                              widget.results[1]['name'],
-                              widget.results[1]['img']),
-                          const SizedBox(height: 5.0),
-                          _buildContent(widget.results[0]['meanings']['light']),
+                          Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: postColor.withOpacity(0.3),
+                                  offset: const Offset(-1.0, 40.0),
+                                ),
+                              ],
+                            ),
+                            child: Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 10),
+                              child: Column(
+                                children: [
+                                  _buildTitle(
+                                      'Overview'.trArgs(),
+                                      widget.results[1]['name'],
+                                      widget.results[1]['img']),
+                                  const SizedBox(height: 5.0),
+                                  _buildContent(
+                                      widget.results[1]['meanings']['light']),
+                                ],
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ),
@@ -110,23 +132,34 @@ class _DetailsPageState extends State<DetailsPage> {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 1),
                     child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        boxShadow: [
-                          BoxShadow(
-                            color: postColor.withOpacity(0.2),
-                            offset: const Offset(200.0, 50.0),
-                          ),
-                        ],
-                      ),
                       child: Column(
                         children: [
-                          _buildTitle(
-                              'Love'.trArgs(),
-                              widget.results[2]['name'],
-                              widget.results[2]['img']),
-                          const SizedBox(height: 5.0),
-                          _buildContent(widget.results[0]['meanings']['light']),
+                          Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: postColor.withOpacity(0.3),
+                                  offset: const Offset(-1.0, 40.0),
+                                ),
+                              ],
+                            ),
+                            child: Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 10),
+                              child: Column(
+                                children: [
+                                  _buildTitle(
+                                      'Overview'.trArgs(),
+                                      widget.results[2]['name'],
+                                      widget.results[2]['img']),
+                                  const SizedBox(height: 5.0),
+                                  _buildContent(
+                                      widget.results[2]['meanings']['light']),
+                                ],
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ),
@@ -135,23 +168,34 @@ class _DetailsPageState extends State<DetailsPage> {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 1),
                     child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        boxShadow: [
-                          BoxShadow(
-                            color: postColor.withOpacity(0.2),
-                            offset: const Offset(200.0, 50.0),
-                          ),
-                        ],
-                      ),
                       child: Column(
                         children: [
-                          _buildTitle(
-                              'Finance'.trArgs(),
-                              widget.results[3]['name'],
-                              widget.results[3]['img']),
-                          const SizedBox(height: 5.0),
-                          _buildContent(widget.results[0]['meanings']['light']),
+                          Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: postColor.withOpacity(0.3),
+                                  offset: const Offset(-1.0, 40.0),
+                                ),
+                              ],
+                            ),
+                            child: Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 10),
+                              child: Column(
+                                children: [
+                                  _buildTitle(
+                                      'Overview'.trArgs(),
+                                      widget.results[3]['name'],
+                                      widget.results[3]['img']),
+                                  const SizedBox(height: 5.0),
+                                  _buildContent(
+                                      widget.results[3]['meanings']['light']),
+                                ],
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ),
@@ -197,13 +241,13 @@ class _DetailsPageState extends State<DetailsPage> {
         Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
-            color: bgColorPrimary,
+            color: Colors.white,
           ),
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: SizedBox(
               height: 160,
-              width: 100,
+              width: 95,
               child: Image.asset(
                 'cards/' + img,
               ),
