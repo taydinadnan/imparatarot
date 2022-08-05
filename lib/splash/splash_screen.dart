@@ -38,7 +38,7 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Stack(
         alignment: Alignment.center,
         children: [
-          BackgorundImage(),
+          backgorundImage(),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [

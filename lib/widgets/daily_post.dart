@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../public/constants.dart';
 
-Widget DailyPosts() {
+Widget dailyPosts() {
   return Column(
     mainAxisAlignment: MainAxisAlignment.center,
     children: [

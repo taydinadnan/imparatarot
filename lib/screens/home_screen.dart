@@ -62,12 +62,12 @@ class _HomeScreenState extends State<HomeScreen> {
       drawer: const Drawer(),
       body: Stack(
         children: [
-          BackgorundImage(),
+          backgorundImage(),
           Column(
             children: [
               header(),
               const SizedBox(height: 50),
-              DailyPosts(),
+              dailyPosts(),
               // DailyPosts(),
             ],
           ),
@@ -75,7 +75,7 @@ class _HomeScreenState extends State<HomeScreen> {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               GestureDetector(
-                child: CardButtons(),
+                child: cardButtons(),
                 onTap: () {
                   Navigator.push(
                       context,

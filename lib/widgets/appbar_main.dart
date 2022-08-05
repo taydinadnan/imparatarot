@@ -4,7 +4,7 @@ import 'package:imparatarot/public/constants.dart';
 class MyAppBar extends StatefulWidget with PreferredSizeWidget {
   final PreferredSizeWidget? bottom;
   final String? sellerUID;
-  MyAppBar({this.bottom, this.sellerUID});
+  MyAppBar({Key? key, this.bottom, this.sellerUID}) : super(key: key);
 
   @override
   _MyAppBarState createState() => _MyAppBarState();

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Widget CardButtons() {
+Widget cardButtons() {
   return Row(
     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
     crossAxisAlignment: CrossAxisAlignment.end,

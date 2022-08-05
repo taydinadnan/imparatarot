@@ -46,7 +46,7 @@ class _DetailsPageState extends State<DetailsPage> {
       ),
       body: Stack(
         children: [
-          BackgorundImage(),
+          backgorundImage(),
           Container(
             height: height,
             width: width,

@@ -43,7 +43,7 @@ class _RandomCardsScreenState extends State<RandomCardsScreen> {
       ),
       body: Stack(
         children: [
-          BackgorundImage(),
+          backgorundImage(),
           SingleChildScrollView(
             child: SizedBox(
               height: MediaQuery.of(context).size.height,

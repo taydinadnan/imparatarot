@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Widget BackgorundImage() {
+Widget backgorundImage() {
   return Padding(
     padding: const EdgeInsets.symmetric(horizontal: 40),
     child: Opacity(
