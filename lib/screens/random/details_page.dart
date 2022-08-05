@@ -7,7 +7,7 @@ import '../../widgets/background_image.dart';
 
 class DetailsPage extends StatefulWidget {
   final results;
-  DetailsPage({Key? key, this.results}) : super(key: key);
+  const DetailsPage({Key? key, this.results}) : super(key: key);
   @override
   State<StatefulWidget> createState() => _DetailsPageState();
 }
@@ -59,145 +59,133 @@ class _DetailsPageState extends State<DetailsPage> {
                   const SizedBox(height: 10.0),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 1),
-                    child: Container(
-                      child: Column(
-                        children: [
-                          Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(20),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: postColor.withOpacity(0.3),
-                                  offset: const Offset(-1.0, 40.0),
-                                ),
+                    child: Column(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            boxShadow: [
+                              BoxShadow(
+                                color: postColor.withOpacity(0.3),
+                                offset: const Offset(-1.0, 40.0),
+                              ),
+                            ],
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 10),
+                            child: Column(
+                              children: [
+                                _buildTitle(
+                                    'Overview'.trArgs(),
+                                    widget.results[0]['name'],
+                                    widget.results[0]['img']),
+                                const SizedBox(height: 5.0),
+                                _buildContent(
+                                    widget.results[0]['meanings']['light']),
                               ],
                             ),
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 10),
-                              child: Column(
-                                children: [
-                                  _buildTitle(
-                                      'Overview'.trArgs(),
-                                      widget.results[0]['name'],
-                                      widget.results[0]['img']),
-                                  const SizedBox(height: 5.0),
-                                  _buildContent(
-                                      widget.results[0]['meanings']['light']),
-                                ],
-                              ),
-                            ),
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                   ),
                   const SizedBox(height: 70),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 1),
-                    child: Container(
-                      child: Column(
-                        children: [
-                          Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(20),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: postColor.withOpacity(0.3),
-                                  offset: const Offset(-1.0, 40.0),
-                                ),
+                    child: Column(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            boxShadow: [
+                              BoxShadow(
+                                color: postColor.withOpacity(0.3),
+                                offset: const Offset(-1.0, 40.0),
+                              ),
+                            ],
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 10),
+                            child: Column(
+                              children: [
+                                _buildTitle(
+                                    'Overview'.trArgs(),
+                                    widget.results[1]['name'],
+                                    widget.results[1]['img']),
+                                const SizedBox(height: 5.0),
+                                _buildContent(
+                                    widget.results[1]['meanings']['light']),
                               ],
                             ),
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 10),
-                              child: Column(
-                                children: [
-                                  _buildTitle(
-                                      'Overview'.trArgs(),
-                                      widget.results[1]['name'],
-                                      widget.results[1]['img']),
-                                  const SizedBox(height: 5.0),
-                                  _buildContent(
-                                      widget.results[1]['meanings']['light']),
-                                ],
-                              ),
-                            ),
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                   ),
                   const SizedBox(height: 70),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 1),
-                    child: Container(
-                      child: Column(
-                        children: [
-                          Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(20),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: postColor.withOpacity(0.3),
-                                  offset: const Offset(-1.0, 40.0),
-                                ),
+                    child: Column(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            boxShadow: [
+                              BoxShadow(
+                                color: postColor.withOpacity(0.3),
+                                offset: const Offset(-1.0, 40.0),
+                              ),
+                            ],
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 10),
+                            child: Column(
+                              children: [
+                                _buildTitle(
+                                    'Overview'.trArgs(),
+                                    widget.results[2]['name'],
+                                    widget.results[2]['img']),
+                                const SizedBox(height: 5.0),
+                                _buildContent(
+                                    widget.results[2]['meanings']['light']),
                               ],
                             ),
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 10),
-                              child: Column(
-                                children: [
-                                  _buildTitle(
-                                      'Overview'.trArgs(),
-                                      widget.results[2]['name'],
-                                      widget.results[2]['img']),
-                                  const SizedBox(height: 5.0),
-                                  _buildContent(
-                                      widget.results[2]['meanings']['light']),
-                                ],
-                              ),
-                            ),
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                   ),
                   const SizedBox(height: 70),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 1),
-                    child: Container(
-                      child: Column(
-                        children: [
-                          Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(20),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: postColor.withOpacity(0.3),
-                                  offset: const Offset(-1.0, 40.0),
-                                ),
+                    child: Column(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            boxShadow: [
+                              BoxShadow(
+                                color: postColor.withOpacity(0.3),
+                                offset: const Offset(-1.0, 40.0),
+                              ),
+                            ],
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 10),
+                            child: Column(
+                              children: [
+                                _buildTitle(
+                                    'Overview'.trArgs(),
+                                    widget.results[3]['name'],
+                                    widget.results[3]['img']),
+                                const SizedBox(height: 5.0),
+                                _buildContent(
+                                    widget.results[3]['meanings']['light']),
                               ],
                             ),
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 10),
-                              child: Column(
-                                children: [
-                                  _buildTitle(
-                                      'Overview'.trArgs(),
-                                      widget.results[3]['name'],
-                                      widget.results[3]['img']),
-                                  const SizedBox(height: 5.0),
-                                  _buildContent(
-                                      widget.results[3]['meanings']['light']),
-                                ],
-                              ),
-                            ),
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                   ),
                   const SizedBox(height: 70),
@@ -261,18 +249,6 @@ class _DetailsPageState extends State<DetailsPage> {
   Widget _buildContent(List content) {
     return Text(
       '-' + content.join('\n\n-'),
-      style: TextStyle(
-        color: Colors.white,
-        fontFamily: 'Lato',
-        fontSize: width / 25.0,
-        fontWeight: FontWeight.w400,
-      ),
-    );
-  }
-
-  Widget _buildContentTranslate(future) {
-    return Text(
-      future.toString(),
       style: TextStyle(
         color: Colors.white,
         fontFamily: 'Lato',

@@ -52,68 +52,66 @@ class _RandomCardsScreenState extends State<RandomCardsScreen> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   const SizedBox(height: 12.0),
-                  Container(
-                    child: Column(
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            _buildTarotCard(cardKey1, 0, 'Overview'.trArgs()),
-                            const SizedBox(width: 16.0),
-                            _buildTarotCard(cardKey2, 1, 'Work'.trArgs()),
-                          ],
-                        ),
-                        const SizedBox(height: 16.0),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            _buildTarotCard(cardKey3, 2, 'Love'.trArgs()),
-                            const SizedBox(width: 16.0),
-                            _buildTarotCard(cardKey4, 3, 'Finance'.trArgs()),
-                          ],
-                        ),
-                        const SizedBox(height: 30.0),
-                        flips.contains(false)
-                            ? Container()
-                            : NeumorphicButton(
-                                onPressed: () => Get.toNamed(Routes.details,
-                                    arguments: unLockCard.sublist(0, 4)),
-                                margin: const EdgeInsets.symmetric(
-                                    horizontal: 48.0),
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      'Result'.trArgs(),
-                                      style: TextStyle(
-                                        color: colorPrimary,
-                                        fontFamily: 'Lato',
-                                        fontSize: width / 24.0,
-                                        fontWeight: FontWeight.w600,
-                                      ),
-                                    ),
-                                    const SizedBox(width: 12.0),
-                                    Icon(
-                                      Icons.arrow_right,
-                                      size: width / 24.0,
+                  Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          _buildTarotCard(cardKey1, 0, 'Overview'.trArgs()),
+                          const SizedBox(width: 16.0),
+                          _buildTarotCard(cardKey2, 1, 'Work'.trArgs()),
+                        ],
+                      ),
+                      const SizedBox(height: 16.0),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          _buildTarotCard(cardKey3, 2, 'Love'.trArgs()),
+                          const SizedBox(width: 16.0),
+                          _buildTarotCard(cardKey4, 3, 'Finance'.trArgs()),
+                        ],
+                      ),
+                      const SizedBox(height: 30.0),
+                      flips.contains(false)
+                          ? Container()
+                          : NeumorphicButton(
+                              onPressed: () => Get.toNamed(Routes.details,
+                                  arguments: unLockCard.sublist(0, 4)),
+                              margin:
+                                  const EdgeInsets.symmetric(horizontal: 48.0),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    'Result'.trArgs(),
+                                    style: TextStyle(
                                       color: colorPrimary,
+                                      fontFamily: 'Lato',
+                                      fontSize: width / 24.0,
+                                      fontWeight: FontWeight.w600,
                                     ),
-                                  ],
-                                ),
-                                padding: EdgeInsets.all(width / 32.0),
-                                style: NeumorphicStyle(
-                                  shape: NeumorphicShape.convex,
-                                  boxShape: NeumorphicBoxShape.roundRect(
-                                    BorderRadius.circular(12.0),
                                   ),
-                                  depth: 15.0,
-                                  intensity: .15,
-                                  color: Colors.black.withOpacity(.75),
+                                  const SizedBox(width: 12.0),
+                                  Icon(
+                                    Icons.arrow_right,
+                                    size: width / 24.0,
+                                    color: colorPrimary,
+                                  ),
+                                ],
+                              ),
+                              padding: EdgeInsets.all(width / 32.0),
+                              style: NeumorphicStyle(
+                                shape: NeumorphicShape.convex,
+                                boxShape: NeumorphicBoxShape.roundRect(
+                                  BorderRadius.circular(12.0),
                                 ),
-                                duration: const Duration(milliseconds: 200),
-                              )
-                      ],
-                    ),
+                                depth: 15.0,
+                                intensity: .15,
+                                color: Colors.black.withOpacity(.75),
+                              ),
+                              duration: const Duration(milliseconds: 200),
+                            )
+                    ],
                   ),
                 ],
               ),
@@ -151,7 +149,7 @@ class _RandomCardsScreenState extends State<RandomCardsScreen> {
             ),
           ),
           back: GestureDetector(
-            onTap: () => null,
+            onTap: () {},
             child: Container(
               height: height * .32,
               width: width * .4,
