@@ -9,6 +9,8 @@ import '../../data/tarot_json.dart';
 import '../../routes/app_pages.dart';
 
 class RandomCardsScreen extends StatefulWidget {
+  const RandomCardsScreen({Key? key}) : super(key: key);
+
   @override
   State<StatefulWidget> createState() => _RandomCardsScreenState();
 }
@@ -74,7 +76,7 @@ class _RandomCardsScreenState extends State<RandomCardsScreen> {
                         flips.contains(false)
                             ? Container()
                             : NeumorphicButton(
-                                onPressed: () => Get.toNamed(Routes.DETAILS,
+                                onPressed: () => Get.toNamed(Routes.details,
                                     arguments: unLockCard.sublist(0, 4)),
                                 margin: const EdgeInsets.symmetric(
                                     horizontal: 48.0),

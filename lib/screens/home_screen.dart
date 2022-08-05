@@ -80,7 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => RandomCardsScreen()));
+                          builder: (context) => const RandomCardsScreen()));
                 },
               ),
             ],

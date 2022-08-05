@@ -11,7 +11,7 @@ void main() async {
   runApp(GetMaterialApp(
     debugShowCheckedModeBanner: false,
     enableLog: true,
-    initialRoute: AppPages.INITIAL,
+    initialRoute: AppPages.initial,
     getPages: AppPages.routes,
     theme: Themes().lightTheme,
     darkTheme: Themes().darkTheme,

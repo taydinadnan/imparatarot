@@ -9,6 +9,8 @@ class App extends StatefulWidget {
   static bool firstCome = true;
   static String? token;
 
+  const App({Key? key}) : super(key: key);
+
   @override
   State<StatefulWidget> createState() => _AppState();
 }
@@ -45,7 +47,7 @@ class _AppState extends State<App> with WidgetsBindingObserver {
       statusBarIconBrightness:
           GetPlatform.isAndroid ? Brightness.light : Brightness.dark,
     ));
-    WidgetsBinding.instance!.addObserver(this);
+    WidgetsBinding.instance.addObserver(this);
     SystemChrome.setPreferredOrientations([
       DeviceOrientation.portraitDown,
       DeviceOrientation.portraitUp,
@@ -57,7 +59,7 @@ class _AppState extends State<App> with WidgetsBindingObserver {
   @override
   Widget build(BuildContext context) {
     return _countDown != 0 && App.firstCome
-        ? SplashScreen()
+        ? const SplashScreen()
         : const HomeScreen();
   }
 }

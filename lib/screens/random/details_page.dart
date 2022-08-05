@@ -7,7 +7,7 @@ import '../../widgets/background_image.dart';
 
 class DetailsPage extends StatefulWidget {
   final results;
-  const DetailsPage({this.results});
+  DetailsPage({Key? key, this.results}) : super(key: key);
   @override
   State<StatefulWidget> createState() => _DetailsPageState();
 }
